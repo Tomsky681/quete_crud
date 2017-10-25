@@ -1,0 +1,27 @@
+wcs_terrain:
+    resource: "@WCSBundle/Controller/terrainController.php"
+    type:     annotation
+
+wcs_flight:
+    resource: "@WCSBundle/Controller/flightController.php"
+    type:     annotation
+
+wcs_reservation:
+    resource: "@WCSBundle/Controller/ReservationController.php"
+    type:     annotation
+
+wcs_plane_model:
+    resource: "@WCSBundle/Controller/PlaneModelController.php"
+    type:     annotation
+
+wcs:
+    resource: "@WCSBundle/Resources/config/routing.yml"
+    prefix:   /
+
+test:
+    path:      /test/
+    defaults:  { _controller: WCSBundle:Thomas:index }
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
